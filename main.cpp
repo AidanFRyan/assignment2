@@ -1,6 +1,9 @@
 #include <iostream>
-#include "Car.h"
-#include "Bicycle.h"
+// #include "Car.h"
+// #include "Bicycle.h"
+#include "Jet.h"
+#include "Skateboard.h"
+#include "F1.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
@@ -10,12 +13,11 @@ int main() {
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
-    vehiclesArray[0] = new Car();
-    vehiclesArray[1] = new Bicycle("eTAP", "P5X");
-    vehiclesArray[2] = new Bicycle("R&A", "Dogma F8", 5);
-    vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
-    vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
-    vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[0] = new Jet();
+    vehiclesArray[1] = new Jet("eTAP", "P5X");
+    vehiclesArray[2] = new Skateboard("R&A", "Dogma F8");
+    vehiclesArray[3] = new Skateboard();
+    vehiclesArray[4] = new F1("Kimi", "Ferrari", "Ferrari", 7);
 
     printVehiclesRoster(vehiclesArray, size);
 

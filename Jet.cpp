@@ -1,11 +1,13 @@
 #include "Jet.h"
 #include <random>
 
-Jet::Jet(string brand, string model, int numEng) : Vehicle(brand, model) {
+Jet::Jet(string brand, string model, int numEng) {
 	numberOfEngines = numEng;
 	std::default_random_engine g;
 	std::uniform_real_distribution<double> dist(40.0, 100.0);
 	mileage = dist(g);
+	setBrand(brand);
+	setModel(model);
 }
 
 string Jet::toString(){
@@ -13,7 +15,7 @@ string Jet::toString(){
 }
 
 double Jet::mileageEstimate(double time){
-	if(numberOfEngines > 2 && strcmp(fuelType, "Rocket") == 0){
+	if(numberOfEngines > 2 && fuelType.compare("Rocket") == 0){
 		return mileage * 1.055 * numberOfEngines * time;
 	}
 	else{

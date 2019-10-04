@@ -1,7 +1,9 @@
 #include "Skateboard.h"
-Skateboard::Skateboard(string brand, string model) : Vehicle(brand, model){
+Skateboard::Skateboard(string brand, string model){
 	dist = std::uniform_real_distribution<double>(0, 1);
 	mileage = dist(g)*0.4 + 0.1;
+	setBrand(brand);
+	setModel(model);
 }
 
 double Skateboard::mileageEstimate(double time){

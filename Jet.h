@@ -7,7 +7,7 @@ private:
 	int numberOfEngines;
 	double mileage;
 public:
-	Jet(string brand, string model, int numEng = 1);
+	Jet(string brand = "Lear", string model = "FastBoi", int numEng = 1);
 	string toString();
 	double mileageEstimate(double time);
 };

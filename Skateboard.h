@@ -9,7 +9,7 @@ class Skateboard : public Vehicle {
 	std::default_random_engine g;
 	std::uniform_real_distribution<double> dist;
 	public:
-	Skateboard(string brand, string model);
+	Skateboard(string brand = "Thrash", string model = "RadialFracture");
 	double mileageEstimate(double time);
 };
 
