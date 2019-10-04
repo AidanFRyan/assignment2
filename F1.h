@@ -8,8 +8,9 @@ class F1 : public PoweredVehicle{
 	string constructor;
 	short number;
 	string engineManufacturer;
+	string trim;
 	public:
-	F1(string d = "Seb", string c = "Ferrari", string e = "FingV12", int n = 5);
+	F1(string d = "Seb", string c = "Ferrari", string e = "FingV12", int n = 5, string t = "Quali");
 	double mileageEstimate(double time);
 };
 
