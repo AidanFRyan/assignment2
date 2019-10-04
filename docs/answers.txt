@@ -1,0 +1,36 @@
+a)
+Counting objects: 4, done.                                                                           
+Delta compression using up to 8 threads.                                                             
+Compressing objects: 100% (3/3), done.                                                               
+Writing objects: 100% (4/4), 518 bytes | 518.00 KiB/s, done.                                         
+Total 4 (delta 1), reused 0 (delta 0)                                                                
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                 
+To github.com:AidanFRyan/assignment2.git                                                             
+   94f2f41..ff7d5ba  master -> master
+
+b)
+There have been a total of 8 commits in this repository, according to git log
+
+c)
+.gitignore was last modified, according to git log .gitignore, on Wednesday, September 25, 2019 at 18:13:30.
+
+d)
+Branches allow multiple individuals to work on the same repository at once (so long as changes do not conflict). Branches allow for the separation of work in an organizational sense, where one task may be one branch.
+
+e)
+git log returns the history of a branch while git status returns the status of the branch since the last commit.
+
+f)
+git log Vehicle.h
+
+g)
+git log | grep "file"
+
+h)
+Inheritance is one class's derivation of member data/behaviour from a parent class. Polymorphism allows for derived classes to be referenced as pointers of the overall superclass (in C++), allowing all derived classes to be clumped together. Encapsulation is the packaging of data together into one unit, as one does with a struct or class in C/C++.
+
+i)
+Under an Integration Manager Workflow, each dev has its own repository with pulls made from a central repo which is maintained/pushed to by an integration manager. The Dictator and Lieutenants Workflow is similar in that there is one manager of the central repo but all devs work in separate "Lietenant" repositories, which are then merged with a Dictator Repository, which is then merged by the Dictator into the central repository.
+
+j)
+The Centralized Repo is likely to have many merge conflicts with 100 devs pushing/merging to the same repository. The Dictator/Lieutenants Repo setup will reduce merge conflicts as each Lieutenant will be resolved, then Lieutenants will be resolved with the Dictator repo, which will then be pushed to the blessed repo.
