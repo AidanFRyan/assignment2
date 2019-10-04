@@ -1,3 +1,5 @@
 pom.xml
 CMakeLists.txt
 cmake-build-debug/
+*.o
+main
