@@ -14,10 +14,11 @@ int main() {
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     vehiclesArray[0] = new Jet();
-    vehiclesArray[1] = new Jet("eTAP", "P5X");
-    vehiclesArray[2] = new Skateboard("R&A", "Dogma F8");
+    vehiclesArray[1] = new Jet("Boeing", "737 Max 8");
+    vehiclesArray[2] = new Skateboard("Skate", "Bored");
     vehiclesArray[3] = new Skateboard();
-    vehiclesArray[4] = new F1("Kimi", "Ferrari", "Ferrari", 7);
+    vehiclesArray[4] = new F1("Kimi", "Ferrari", "Ferrari", 7, "race");
+    vehiclesArray[5] = new F1();
 
     printVehiclesRoster(vehiclesArray, size);
 
