@@ -34,3 +34,6 @@ Under an Integration Manager Workflow, each dev has its own repository with pull
 
 j)
 The Centralized Repo is likely to have many merge conflicts with 100 devs pushing/merging to the same repository. The Dictator/Lieutenants Repo setup will reduce merge conflicts as each Lieutenant will be resolved, then Lieutenants will be resolved with the Dictator repo, which will then be pushed to the blessed repo.
+
+#5 )
+The Driving Simulator is using both polymorphism and encapsulation. The array of type Vehicle* is a use of polymorphism, as multiple types of vehicles are referenced in this array (I used Jetc, Skateboards, and Formula One cars). The values associated with these individual cars are "encapuslated" in each object, allowing the data to be referred to by a single identifier to that object.
